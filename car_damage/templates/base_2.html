@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "mystyle.css"%}"/>
+    <title></title>
+  </head>
+  <body >
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'car_damage:home' %}">Home<span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'car_damage:engine' %}">Process<span class="sr-only"></span></a>
+          </li>
+        </ul>
+    </div>
+    </nav>
+    <br>
+    <div class="container">
+      {% block body %}
+      <p>Hello there</p>
+      {% endblock body %}
+    </div>
+  </body>
+</html>

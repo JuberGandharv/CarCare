@@ -1,0 +1,30 @@
+.jambotron{
+    background: none !important;
+    background-color: transparent;
+    position: fixed;
+    color: white;
+}
+.bottom{
+  position: fixed;
+  bottom: 0px;
+  color: white;
+}
+.bottom2{
+  position: fixed;
+  bottom: 0px;
+  color: black;
+}
+.bottomright{
+  position: fixed;
+  bottom: 8px;
+  right: 16px;
+  color: white;
+}
+.home_car{
+  background-position: center;
+  height: 700px;
+  width: auto;
+  background-image: url('car_home_2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}

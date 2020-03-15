@@ -1,0 +1,16 @@
+{% extends 'base_2.html' %}
+{% block body %}
+{% load static %}
+<form class="container" method="post" enctype="multipart/form-data">
+{% csrf_token %}
+{{form.as_p}}
+<p><input type="submit" name = "Upload Img" value="Upload"></p>
+</form>
+{% if documents %}
+<div class="container">
+  <img src = "{{ image_path_html }}" height="500" width="700" border="5">
+
+</div>
+
+{% endif %}
+{% endblock %}

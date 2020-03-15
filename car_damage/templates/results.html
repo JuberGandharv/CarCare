@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block body %}
+
+
+<div class="jumbotron">
+
+  <h1> Car-Care Below are the results </h1>
+  <br>
+  <br>
+  <h3>Car Check:</h3>
+    {{ g1_pic }}
+  <br>
+  <br>
+  <h3>Damage Check:</h3>
+    {{ g2_pic }}
+  <br>
+  <br>
+  <h3>Location Check</h3>
+    {{ loc }}
+  <br>
+  <br>
+  <h3>Severity Check</h3>
+    {{ sev }}
+  <br>
+  <br>
+  <h3>Additional Services</h3>
+    {{ ns|linebreaks }}
+</div>
+
+<div class="bottom2">
+   <h5>Thanks for using Car Care portal</h5>
+   <h6>Copyright : Juber.Gandharv@gmail.com</h6>
+</div>
+{% endblock body %}
